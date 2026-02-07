@@ -1,0 +1,20 @@
+body {
+    background: radial-gradient(circle, #2a0845, #000000);
+    color: #f1d38e;
+    font-family: sans-serif;
+    margin: 0; padding: 20px;
+}
+.container { max-width: 500px; margin: auto; text-align: center; }
+.glow-text { text-shadow: 0 0 10px #ffcc00; color: #ffd700; }
+.input-form { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 15px; border: 1px solid #ffd700; margin-bottom: 20px; }
+.form-group { margin-bottom: 15px; text-align: left; }
+input, textarea, select { width: 100%; padding: 10px; box-sizing: border-box; background: #1a1a1a; border: 1px solid #444; color: white; border-radius: 5px; }
+.camera-box { position: relative; width: 100%; border-radius: 15px; overflow: hidden; border: 2px dashed #ffd700; margin-bottom: 10px; min-height: 200px; }
+#webcam { width: 100%; display: block; }
+.overlay-text { position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.6); padding: 5px 0; font-size: 14px; }
+.btn-gold { background: linear-gradient(to right, #bf953f, #fcf6ba); color: black; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: bold; margin: 5px; }
+.btn-primary { width: 100%; background: #6a1b9a; color: white; padding: 15px; border: none; border-radius: 25px; font-size: 18px; margin-top: 20px; cursor: pointer; box-shadow: 0 0 15px #6a1b9a; }
+.hidden { display: none; }
+.result-box { background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 15px; border: 1px solid #ffd700; margin-top: 30px; text-align: left; border-left: 5px solid #ffd700; }
+.loader { border: 4px solid #f3f3f3; border-top: 4px solid #ffd700; border-radius: 50%; width: 30px; height: 30px; animation: spin 2s linear infinite; margin: 10px auto; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }

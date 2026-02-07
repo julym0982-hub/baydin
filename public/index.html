@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuLu AI ဗေဒင် - လက်ဖဝါးဖတ်ရှုခြင်း</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glow-text">LuLu AI ဗေဒင်</h1>
+            <p>မြန်မာ့ရိုးရာ ပုရပိုက်အငွေ့အသက်ပါသော AI ဟောစခန်း</p>
+        </header>
+
+        <section class="input-form">
+            <div class="form-group">
+                <label>အမည်</label>
+                <input type="text" id="userName" placeholder="အမည်ရိုက်ထည့်ပါ">
+            </div>
+            <div class="form-row" style="display: flex; gap: 10px;">
+                <div class="form-group" style="flex: 1;">
+                    <label>အသက်</label>
+                    <input type="number" id="userAge" placeholder="အသက်">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>ကျား/မ</label>
+                    <select id="userGender">
+                        <option value="male">ကျား</option>
+                        <option value="female">မ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>မေးမြန်းလိုသည့် အကြောင်းအရာ</label>
+                <textarea id="userQuestion" rows="3" placeholder="သိလိုသည်များကို တိတိကျကျ ရေးသားပါ"></textarea>
+            </div>
+        </section>
+
+        <section class="camera-section">
+            <div class="camera-box">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="canvas" style="display:none;"></canvas>
+                <img id="previewImage" style="display:none; width: 100%; border-radius: 10px;">
+                <div id="cameraOverlay" class="overlay-text">လက်ဖဝါးကို ဓာတ်ပုံရိုက်ပါ</div>
+            </div>
+            <button class="btn-gold" id="captureBtn">ဓာတ်ပုံရိုက်မည်</button>
+            <button class="btn-gold" id="retakeBtn" style="display:none;">ပြန်ရိုက်မည်</button>
+        </section>
+
+        <button class="btn-primary" id="submitBtn">ဟောစာတမ်းတွက်ချက်မည်</button>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>ကြယ်တာရာများ တွက်ချက်နေပါသည်...</p>
+        </div>
+
+        <div id="resultBox" class="result-box hidden">
+            <h3>ဟောစာတမ်း</h3>
+            <p id="resultContent" style="white-space: pre-wrap; line-height: 1.6;"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
