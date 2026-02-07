@@ -105,16 +105,11 @@ submitBtn.onclick = async () => {
 
     try {
 
-        const response = await fetch('http://localhost:3000/api/baydin', {
-
-            method: 'POST',
-
-            headers: { 'Content-Type': 'application/json' },
-
-            body: JSON.stringify({ name, age, gender, question })
-
-        });
-
+        const response = await fetch('https://aydin-s0ck.onrender.com/api/baydin', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, age, gender, question })
+});
 
 
         const data = await response.json();
@@ -152,4 +147,5 @@ submitBtn.onclick = async () => {
 
 
 initCamera();
+
 
